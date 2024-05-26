@@ -4,9 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/index.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <title>Restaurant Ordering App</title>
   </head>
   <body>
+    <header>
+      <div class="text-wrapper">
+        <h1>Jimmy's Diner</h1>
+        <p>The best burgers and pizzas in town.</p>
+      </div>
+    </header>
+    <main>
+      <section class="menu-items" id="menu-items"></section>
+      <section class="your-order" id="your-order"></section>
+    </main>
+    <div class="payment-modal hidden" id="payment-modal">
+      <h2>Enter card details</h2>
+      <input type="text" placeholder="Enter your name" required />
+      <input type="text" placeholder="Enter card number" required />
+      <input type="text" placeholder="Enter CVV" required />
+      <button class="payment-btn" id="payment-btn">Pay</button>
+    </div>
     <script src="/assets/index.js" type="module"></script>
   </body>
 </html>

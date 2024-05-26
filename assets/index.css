@@ -1,3 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
     margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fdf0d5;
+    font-family: "Smythe", system-ui;
+}
+
+h1,
+p {
+    margin: 0;
+    color: #fdf0d5;
+}
+
+h1 {
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* HEADER START */
+
+.text-wrapper {
+    padding-top: 16px;
+}
+
+main,
+header {
+    width: 390px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-image: url("/assets/burger-img.jpg");
+    background-position: 50%;
+    background-size: 390px;
+    background-repeat: no-repeat;
+    padding-bottom: 32px;
+}
+
+/* HEADER END */
+
+.menu-items {
+    height: 50vh;
+}
+
+.your-order {
+    height: 25vh;
 }
