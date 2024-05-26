@@ -14,7 +14,6 @@ body {
 h1,
 p {
     margin: 0;
-    color: #fdf0d5;
 }
 
 h1 {
@@ -29,6 +28,16 @@ p {
 
 .hidden {
     display: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+hr {
+    background-color: black;
+    border: 0.5px solid;
 }
 
 /* HEADER START */
@@ -50,14 +59,49 @@ header {
     background-size: 390px;
     background-repeat: no-repeat;
     padding-bottom: 32px;
+    color: #fdf0d5;
 }
 
 /* HEADER END */
 
-.menu-items {
-    height: 50vh;
+/* MENU ITEMS SECTION START */
+
+#menu-container {
+    height: 60vh;
+
 }
 
-.your-order {
+#order-section {
     height: 25vh;
 }
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-wrapper {
+    text-align: start;
+    display: flex;
+}
+
+.text-wrapper {
+    padding: 0;
+}
+
+.item-name {
+    margin-bottom: 4px;
+}
+
+.add-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fa-circle-plus {
+    font-size: 32px;
+}
+
+/* MENU ITEMS SECTION END */
