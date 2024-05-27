@@ -33,16 +33,18 @@
       <section id="order-section"></section>
     </main>
     <section class="payment-modal hidden" id="payment-modal">
-      <h2>Enter card details</h2>
-      <input
-        type="text"
-        placeholder="Enter your name"
-        id="users-name"
-        required
-      />
-      <input type="number" placeholder="Enter card number" required />
-      <input type="number" placeholder="Enter CVV" required />
-      <button type="submit" id="payment-btn">Pay</button>
+      <div class="modal-wrapper">
+        <h2>Enter card details</h2>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          id="users-name"
+          required
+        />
+        <input type="number" placeholder="Enter card number" required />
+        <input type="number" placeholder="Enter CVV" required />
+        <button type="submit" id="payment-btn">Pay</button>
+      </div>
     </section>
     <script src="/assets/index.js" type="module"></script>
   </body>

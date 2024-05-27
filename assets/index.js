@@ -45,8 +45,8 @@ function renderOrder(menu, itemId) {
             <div id="order-items"></div> 
             <hr/>
             <div class="order-total-wrapper">
-              <div class="order-total-title">Total price:</div>
-              <div id="order-total"></div>
+              <h3 class="order-total-title">Total price:</h3>
+              <h3 id="order-total"></h3>
             </div>
             <button id="complete-order">Complete Order</button>
   `;
@@ -92,8 +92,10 @@ function renderItems(items, menu, _itemId) {
   items.forEach(function (itemId) {
     document.getElementById("order-items").innerHTML += `
             <div class="order-item">
+            <div class="order-wrapper">
               <h3 class="order-item-name">${menu[itemId].name}</h3>
               <p class="remove-item" data-remove="${itemId}">remove</p>
+            </div>
               <h3 class="order-item-price">£${menu[itemId].price}</h3>
             </div>
     `;
