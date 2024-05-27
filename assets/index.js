@@ -3,6 +3,7 @@ import menuArray from "/assets/data.js";
 let totalPrice = 0;
 let order = [];
 
+// Mapping through elmenents in the menus array to output options on the screen for the user.
 function menuItemsHTML(menuArr) {
   return menuArr
     .map((menuItem) => {
@@ -30,7 +31,7 @@ function menuItemsHTML(menuArr) {
 
 document.getElementById("menu-container").innerHTML = menuItemsHTML(menuArray);
 
-// Listening out for clicks on each items add button. If the menuItemID is greater than or equal to 0 and is less than menuArray's length, the order will be rendered.
+// Listening out for clicks on each items add button. If the e.target.dataset.add  is greater than or equal to 0 and is less than menuArray's length, the order will be rendered.
 document.addEventListener("click", function (e) {
   if (e.target.dataset.add >= 0 && e.target.dataset.add < menuArray.length) {
     renderOrder(menuArray, e.target.dataset.add);
@@ -57,6 +58,7 @@ function renderOrder(menu, itemId) {
   //Rendering items in the order
   renderItems(order, menu, itemId);
 
+  // Removing items from the order if remove is clicked on them.
   document
     .getElementById("order-items")
     .addEventListener("click", function (e) {
@@ -64,15 +66,15 @@ function renderOrder(menu, itemId) {
         e.target.dataset.remove >= 0 &&
         e.target.dataset.remove < menuArray.length
       ) {
-        order.splice(order.indexOf(e.target.dataset.remove), 1);
+        order.splice(order.indexOf(e.target.dataset.remove), 1); //removing 1 element from the array and the element that will be removed will depend on the id/menu item that had its remove button clicked.
 
-        // Subtract price from total price
+        // Subtracting the price from total price
         totalPrice -= menu[e.target.dataset.remove].price;
 
-        // Clean cart list
+        // Clear order list
         document.getElementById("order-items").innerHTML = "";
 
-        // Render items in the cart after change
+        // Rendering items in the order after change
         renderItems(order, menu, itemId);
       }
     });
@@ -100,6 +102,7 @@ function renderItems(items, menu, _itemId) {
   document.getElementById("order-total").textContent = `£${totalPrice}`;
 }
 
+// user pays here.
 function payment() {
   document
     .getElementById("payment-btn")
