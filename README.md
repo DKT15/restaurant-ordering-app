@@ -1,7 +1,5 @@
 # restaurant-ordering-app
 
-# Prework-Study-Guide Website
-
 ## Description
 
 This is a mobile app that allows the user to food order items. Note - please do not enter any sensitive info.
