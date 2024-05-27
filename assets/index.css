@@ -45,7 +45,7 @@ hr {
 
 main,
 header {
-    width: 400px;
+    width: 420px;
     margin: 0 auto;
     text-align: center;
 }
@@ -53,7 +53,7 @@ header {
 header {
     background-image: url("/assets/burger-img.jpg");
     background-position: 50%;
-    background-size: 400px;
+    background-size: 420px;
     background-repeat: no-repeat;
     padding-bottom: 32px;
     color: #fdf0d5;
@@ -65,6 +65,7 @@ header {
 
 #menu-container {
     height: 54vh;
+    margin-bottom: 16px;
 
 }
 
@@ -131,7 +132,7 @@ header {
     font-weight: 700;
     border-radius: 4px;
     color: #FFFFFF;
-    width: 400px;
+    width: 420px;
     height: 40px;
 }
 
@@ -156,7 +157,7 @@ header {
     right: 0;
     border: 1px none;
     border-radius: 4px;
-    width: 400px;
+    width: 420px;
     height: 380px;
     background-color: #ffffff;
 }
