@@ -53,7 +53,7 @@ header {
 header {
     background-image: url("/assets/burger-img.jpg");
     background-position: 50%;
-    background-size: 390px;
+    background-size: 400px;
     background-repeat: no-repeat;
     padding-bottom: 32px;
     color: #fdf0d5;
@@ -65,7 +65,7 @@ header {
 
 #menu-container {
     height: 60vh;
-    margin-bottom: 32px;
+    margin: 32px 0;
 }
 
 #order-section {
