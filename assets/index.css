@@ -30,10 +30,7 @@ p {
     display: none;
 }
 
-button {
-    background: none;
-    border: none;
-}
+
 
 hr {
     background-color: black;
@@ -67,7 +64,7 @@ header {
 /* MENU ITEMS SECTION START */
 
 #menu-container {
-    height: 60vh;
+    height: 54vh;
 
 }
 
