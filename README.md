@@ -35,7 +35,7 @@ This is a mobile app that allows the user to food order items. Note - please do 
 
 ## Deployment
 
-You can access the website with this link.(https://dkt-restaurant-ordering-app.netlify.app/)
+You can access the website with this [link.](https://dkt-restaurant-ordering-app.netlify.app/)
 
 ## Contributing
 
