@@ -6,7 +6,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 120vh;
+    height: 100vh;
     background-color: #fdf0d5;
     font-family: "Smythe", system-ui;
 }
@@ -64,12 +64,12 @@ header {
 /* MENU ITEMS SECTION START */
 
 #menu-container {
-    height: 60vh;
+    min-height: 60vh;
     margin: 32px 0;
 }
 
 #order-section {
-    height: 25vh;
+    min-height: 40vh;
     margin-top: 32px;
 }
 
